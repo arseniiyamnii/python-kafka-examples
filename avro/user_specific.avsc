@@ -1,0 +1,19 @@
+{
+    "namespace": "confluent.io.examples.serialization.avro2",
+    "name": "User2",
+    "type": "record",
+    "fields": [
+        {
+            "name": "name2",
+            "type": "string"
+        },
+        {
+            "name": "favorite_number",
+            "type": "long"
+        },
+        {
+            "name": "favorite_color",
+            "type": "string"
+        }
+    ]
+}

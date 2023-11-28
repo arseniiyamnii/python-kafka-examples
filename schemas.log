@@ -1,0 +1,32 @@
+{"keytype":"SCHEMA","subject":"vavada.user_event.promo_code_activated","version":1,"magic":1}	{"subject":"vavada.user_event.promo_code_activated","version":1,"id":1,"schema":"{\"type\":\"record\",\"name\":\"promo_code_activated\",\"namespace\":\"vavada.user_event\",\"fields\":[{\"name\":\"code\",\"type\":\"string\"},{\"name\":\"userId\",\"type\":\"int\"},{\"name\":\"createdAt\",\"type\":\"string\",\"doc\":\"Microseconds timestamp format (0.000000)\"},{\"name\":\"params\",\"type\":[{\"type\":\"record\",\"name\":\"referral_code_params\",\"namespace\":\"vavada.user_event.relation\",\"fields\":[{\"name\":\"clickId\",\"type\":[\"string\",\"null\"]},{\"name\":\"subId1\",\"type\":[\"string\",\"null\"]},{\"name\":\"subId2\",\"type\":[\"string\",\"null\"]},{\"name\":\"subId3\",\"type\":[\"string\",\"null\"]},{\"name\":\"subId4\",\"type\":[\"string\",\"null\"]},{\"name\":\"subId5\",\"type\":[\"string\",\"null\"]}]},\"null\"]}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"vavada.user_event.withdrawal_confirmed","version":1,"magic":1}	{"subject":"vavada.user_event.withdrawal_confirmed","version":1,"id":2,"schema":"{\"type\":\"record\",\"name\":\"withdrawal_confirmed\",\"namespace\":\"vavada.user_event\",\"fields\":[{\"name\":\"amount\",\"type\":\"int\"},{\"name\":\"currency\",\"type\":\"string\"},{\"name\":\"paymentFeeAmount\",\"type\":\"float\"},{\"name\":\"userId\",\"type\":\"int\"},{\"name\":\"createdAt\",\"type\":\"string\",\"doc\":\"Microseconds timestamp format (0.000000)\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"vavada.user_event.money_transferred","version":1,"magic":1}	{"subject":"vavada.user_event.money_transferred","version":1,"id":3,"schema":"{\"type\":\"record\",\"name\":\"money_transferred\",\"namespace\":\"vavada.user_event\",\"fields\":[{\"name\":\"senderUserId\",\"type\":\"int\"},{\"name\":\"recipientUserId\",\"type\":\"int\"},{\"name\":\"amount\",\"type\":\"int\"},{\"name\":\"currency\",\"type\":\"string\"},{\"name\":\"createdAt\",\"type\":\"string\",\"doc\":\"Microseconds timestamp format (0.000000)\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"vavada.user_event.deposit_invoice_confirmed","version":1,"magic":1}	{"subject":"vavada.user_event.deposit_invoice_confirmed","version":1,"id":4,"schema":"{\"type\":\"record\",\"name\":\"deposit_invoice_confirmed\",\"namespace\":\"vavada.user_event\",\"fields\":[{\"name\":\"amount\",\"type\":\"int\"},{\"name\":\"currency\",\"type\":\"string\"},{\"name\":\"paymentFeeAmount\",\"type\":\"float\"},{\"name\":\"acceptedNumber\",\"type\":\"int\"},{\"name\":\"userId\",\"type\":\"int\"},{\"name\":\"createdAt\",\"type\":\"string\",\"doc\":\"Microseconds timestamp format (0.000000)\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"vavada.user_event.registered","version":1,"magic":1}	{"subject":"vavada.user_event.registered","version":1,"id":5,"schema":"{\"type\":\"record\",\"name\":\"registered\",\"namespace\":\"vavada.user_event\",\"fields\":[{\"name\":\"visitId\",\"type\":\"string\"},{\"name\":\"userId\",\"type\":\"int\"},{\"name\":\"createdAt\",\"type\":\"string\",\"doc\":\"Microseconds timestamp format (0.000000)\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"__debezium-heartbeat.postgres-key","version":1,"magic":1}	{"subject":"__debezium-heartbeat.postgres-key","version":1,"id":6,"schema":"{\"type\":\"record\",\"name\":\"ServerNameKey\",\"namespace\":\"io.debezium.connector.common\",\"fields\":[{\"name\":\"serverName\",\"type\":\"string\"}],\"connect.name\":\"io.debezium.connector.common.ServerNameKey\"}","deleted":false}
+{"keytype":"SCHEMA","subject":"__debezium-heartbeat.postgres-value","version":1,"magic":1}	{"subject":"__debezium-heartbeat.postgres-value","version":1,"id":7,"schema":"{\"type\":\"record\",\"name\":\"Heartbeat\",\"namespace\":\"io.debezium.connector.common\",\"fields\":[{\"name\":\"ts_ms\",\"type\":\"long\"}],\"connect.name\":\"io.debezium.connector.common.Heartbeat\"}","deleted":false}
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"SCHEMA","subject":"my-topic-value","version":1,"magic":1}	{"subject":"my-topic-value","version":1,"id":8,"schema":"{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"confluent.io.examples.serialization.avro\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"favorite_number\",\"type\":\"long\"},{\"name\":\"favorite_color\",\"type\":\"string\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"my-topic2-value","version":1,"magic":1}	{"subject":"my-topic2-value","version":1,"id":8,"schema":"{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"confluent.io.examples.serialization.avro\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"favorite_number\",\"type\":\"long\"},{\"name\":\"favorite_color\",\"type\":\"string\"}]}","deleted":false}
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"NOOP","magic":0}	null
+{"keytype":"SCHEMA","subject":"my-topic2-value","version":2,"magic":1}	{"subject":"my-topic2-value","version":2,"id":9,"schema":"{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"confluent.io.examples.serialization.avro\",\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"doc\":\"Test documentation\"},{\"name\":\"favorite_number\",\"type\":\"long\"},{\"name\":\"favorite_color\",\"type\":\"string\"}]}","deleted":false}
+{"keytype":"SCHEMA","subject":"my-topic2-value","version":3,"magic":1}	{"subject":"my-topic2-value","version":3,"id":10,"schema":"{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"confluent.io.examples.serialization.avro\",\"fields\":[{\"name\":\"name\",\"type\":\"string\",\"doc\":\"Test documentation2\"},{\"name\":\"favorite_number\",\"type\":\"long\"},{\"name\":\"favorite_color\",\"type\":\"string\"}]}","deleted":false}

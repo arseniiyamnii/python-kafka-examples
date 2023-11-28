@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-producer
+  namespace: vavada-dev
+  labels:
+    app: python-producer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-producer
+  template:
+    metadata:
+      labels:
+        app: python-producer
+    spec:
+      containers:
+      - name: python
+        image: k3d-3-node-cluster-registry-vavada:5005/kafka-producer
+        imagePullPolicy: Always
+        env:
+          - name: KAFKA_BOOTSTRAP
+            value: kafka-cluster-kafka-bootstrap:9092
+          - name: SCHEMA_REGISTRY
+            value: http://schema-registry:8081
+          - name: TOPIC
+            value: my-topic2-test2
+          - name: SPECIFIC
+            value: "true"
+        #command: ["/scripts/test.py"]
+
+        #volumeMounts:
+          #- name: scripts
+            #mountPath: /scripts/
+      #volumes:
+        #- name: scripts
+          #configMap:
+            #name: pythonscript
+            #defaultMode: 0777
+
